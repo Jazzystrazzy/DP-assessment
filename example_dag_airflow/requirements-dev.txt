@@ -1,0 +1,5 @@
+# NOTE: You should install these tools globally using pipx
+tox
+black
+ruff
+mypy
