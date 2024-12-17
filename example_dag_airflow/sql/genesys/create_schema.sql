@@ -1,0 +1,2 @@
+CREATE SCHEMA gen;
+CREATE SCHEMA gen_stg;

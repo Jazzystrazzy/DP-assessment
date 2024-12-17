@@ -1,0 +1,31 @@
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.ruff]
+src = ["src"]
+select = [
+  "E",   # pycodestyle
+  "F",   # pyflakes
+  "UP",  # pyupgrade
+  "D",   # pydocstyle
+  "B",   # flake8-bugbeer
+  "C4",  # flake8-comprehensions
+  "SIM", # flake8-simplify,
+  "I",   # isort
+]
+
+# Never enforce `D107' (missing docstring in __init__).
+# Never enforce `D100' (missing docstring in public module).
+# Never enforce `D105' (missing docstring in magic method).
+# Never enforce `D106' (missing docstring in public nested class).
+# Never enforce `D104' (missing docstring in public package).
+ignore = ["D107", "D100", "D105", "D106", "D104"]
+
+# Avoid trying to fix flake8-bugbear (`B`) violations.
+unfixable = ["B"]
+
+target-version = "py311"
+
+[tool.ruff.pydocstyle]
+convention = "google"

@@ -1,0 +1,10 @@
+msal
+backoff>=2.0.0
+httpx
+pendulum
+pandas >= 2.2.0
+PureCloudPlatformClientV2
+apache-airflow==2.8.0
+dl-airflow-providers
+https://datalabfabriek.github.io/dl-afp-exactonline/latest.tar.gz
+nltk

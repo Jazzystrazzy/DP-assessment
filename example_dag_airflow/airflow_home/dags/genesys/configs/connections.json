@@ -1,0 +1,20 @@
+{
+    "adls": {
+        "conn_id": "adls_connection",
+        "first_filesystem": "raw",
+        "second_filesystem": "curated",
+        "blob_path": {
+            "calls": "genesys/call_logs/calls/{{ data_interval_start }}.csv",
+            "participants": "genesys/call_logs/participants/{{ data_interval_start }}.csv",
+            "segments": "genesys/call_logs/segments/{{ data_interval_start }}.csv",
+            "contacts": "genesys/contacts/{{ data_interval_start }}.csv",
+            "users": "genesys/users/{{ data_interval_start }}.csv"
+        }
+    },
+    "dwh": {
+        "conn_id": "dwh_connection",
+        "staging_schema": "gen_stg",
+        "production_schema": "gen"
+    },
+    "secrets": "genesys_secrets"
+}

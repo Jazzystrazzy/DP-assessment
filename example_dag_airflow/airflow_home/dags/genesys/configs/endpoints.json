@@ -1,0 +1,97 @@
+{
+    "call_logs": {
+        "params": {
+            "page_size": 50,
+            "page_number": 1,
+            "interval": "{{ data_interval_start }}/{{ data_interval_end }}"
+        },
+        "output": {
+            "calls": {
+                "fields": {
+                    "id": "nothing",
+                    "start_time": "nothing",
+                    "end_time": "nothing",
+                    "originating_direction": "nothing",
+                    "dl_imported_at": "nothing"
+                },
+                "key": ["id"]
+            },
+            "participants": {
+                "fields": {
+                    "conversation_id": "nothing",
+                    "id": "nothing",
+                    "name": "nothing",
+                    "purpose": "nothing",
+                    "team_id": "nothing",
+                    "user_id": "nothing",
+                    "session_id": "nothing",
+                    "session_ani": "phone_number",
+                    "session_dnis": "phone_number",
+                    "talk_time": "nothing",
+                    "dl_imported_at": "nothing"
+                },
+                "key": ["conversation_id", "id"]
+            },
+            "segments": {
+                "fields": {
+                    "conversation_id": "nothing",
+                    "type": "nothing",
+                    "start_time": "nothing",
+                    "end_time": "nothing",
+                    "session_id": "nothing",
+                    "dl_imported_at": "nothing"
+                },
+                "key": [
+                    "conversation_id",
+                    "type",
+                    "start_time",
+                    "end_time",
+                    "session_id"
+                ]
+            }
+        },
+        "schedule": "@hourly"
+    },
+    "contacts": {
+        "params": {
+            "limit": 200,
+            "cursor": "",
+            "page_number": 1
+        },
+        "output": {
+            "contacts": {
+                "fields": {
+                    "first_name": "nothing",
+                    "last_name": "nothing",
+                    "id": "nothing",
+                    "email_work": "nothing",
+                    "email_private": "nothing",
+                    "phone_work": "nothing",
+                    "phone_mobile": "nothing",
+                    "dl_imported_at": "nothing"
+                },
+                "key": ["id"]
+            }
+        },
+        "schedule": "@daily"
+    },
+    "users": {
+        "params": {
+            "page_size": 1000
+        },
+        "output": {
+            "users": {
+                "fields": {
+                    "id": "nothing",
+                    "name": "nothing",
+                    "email": "nothing",
+                    "phone_mobile": "nothing",
+                    "phone_work": "nothing",
+                    "dl_imported_at": "nothing"
+                },
+                "key": ["id"]
+            }
+        },
+        "schedule": "@daily"
+    }
+}

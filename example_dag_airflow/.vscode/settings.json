@@ -1,0 +1,20 @@
+{
+    "python.analysis.typeCheckingMode": "basic",
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/airflow_home/dags",
+        "${workspaceFolder}/airflow_home/plugins"
+    ],
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/airflow_home/dags",
+        "${workspaceFolder}/airflow_home/plugins"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnType": true
+    },
+    "editor.formatOnSave": true
+}
